@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="eng"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<!-- Stylesheets-->
+	<link rel="stylesheet" type="text/css" href="Trend%20Search_files/main.css">
+	<link rel="stylesheet" type="text/css" href="Trend%20Search_files/reset.css">
+	    
+	<!-- JavaScript -->
+	<script src="Trend%20Search_files/jquery.js"></script>
+	<script type="text/javascript" src="Trend%20Search_files/app.js"></script>
+		
+	<meta charset="utf-8">
+	<title>Trend Search</title>
+    </head>
+    <body>
+        <header>
+            <div class="header-right">
+                <ul>
+                    <li><a class="register" href="#">Register</a></li>
+                    <li><a class="login" href="#">Login</a></li>
+                </ul>
+            </div>
+	    <!-- Modal Login Box -->
+		<div class="overlay login-overlay">
+		    <div class="modal">
+			<div class="exit">
+			    <a class="close" href="#">X</a>
+			</div>
+			<form>
+			    <input name="email" class="email" placeholder="email address..." size="50" type="text">
+			    <input name="password" class="password" placeholder="password..." size="50" type="text">
+			    <input value="Login" type="submit">
+			</form>
+		    </div>
+		</div>
+		
+		<!-- Modal Registration Box -->
+		<div class="overlay reg-overlay">
+		    <div class="modal">
+			<div class="exit">
+			    <a class="close" href="#">X</a>
+			</div>
+			<form>
+			    <input name="fname" class="fname" placeholder="first name..." size="50" type="text">
+			    <input name="lname" class="lname" placeholder="last name..." size="50" type="text">
+			    <input name="email" class="email" placeholder="email address..." size="50" type="text">
+			    <input name="password" class="password" placeholder="password..." size="50" type="text">
+			    <input name="password2" class="password2" placeholder="confirm password..." size="50" type="text">
+			    <input value="Register" type="submit">
+			</form>
+		    </div>
+		</div>
+
+        </header>
+	<div class="wrapper">
+	    <div class="content">
+	        <form class="search-form">
+	            <input name="search" class="search" placeholder="Enter a search term..." size="80" type="text">
+	        </form>
+	    </div>
+	</div>
+    
+</body></html>

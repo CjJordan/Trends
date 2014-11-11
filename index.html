@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+	<!-- Stylesheets-->
+	<link rel="stylesheet" type="text/css" href="styles/reset.css">
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	    
+	<!-- JavaScript -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="script/app.js"></script>
+		
+	<meta charset="utf-8">
+	<title>Trend Search</title>
+    </head>
+    <body>
+        <header>
+            <div class="header-right">
+                <ul>
+                    <li><a class="register" href="#">Register</a></li>
+                    <li><a class="login" href="#">Login</a></li>
+                </ul>
+            </div>
+	    <!-- Modal Login Box -->
+		<div class="overlay login-overlay" >
+		    <div class="modal">
+			<div class="exit">
+			    <a class="close" href="#">X</a>
+			</div>
+			<form>
+			    <input type="text" name="email" class="email"  placeholder="email address..." size="50">
+			    <input type="text" name="password" class="password"  placeholder="password..." size="50">
+			    <input type="submit" value="Login">
+			</form>
+		    </div>
+		</div>
+		
+		<!-- Modal Registration Box -->
+		<div class="overlay reg-overlay" >
+		    <div class="modal">
+			<div class="exit">
+			    <a class="close" href="#">X</a>
+			</div>
+			<form>
+			    <input type="text" name="fname" class="fname"  placeholder="first name..." size="50">
+			    <input type="text" name="lname" class="lname"  placeholder="last name..." size="50">
+			    <input type="text" name="email" class="email"  placeholder="email address..." size="50">
+			    <input type="text" name="password" class="password"  placeholder="password..." size="50">
+			    <input type="text" name="password2" class="password2"  placeholder="confirm password..." size="50">
+			    <input type="submit" value="Register">
+			</form>
+		    </div>
+		</div>
+        </header>
+	
+	<div class="wrapper">
+	        <form class="search-form" onsubmit="return false;">
+	            <input type="text" name="search" class="search" placeholder="Enter a search term..." size="80" autocomplete="off">
+	        </form>
+		<div class="right">
+		    <section class="score-section">
+			<h1> Score </h1>
+			<p class = "score"></p>
+		    </section>
+		</div>
+		<div class = "left">
+		    <section>
+			<h2> Recent YouTube Videos:  </h2>
+			<p class="youtube-count"></p>
+		    </section>
+		    <section>
+			<h2> Recent Instagram Posts: </h2>
+			<p class="instagram-count"></p>
+		    </section>
+		    <section>
+			<h2> Recent Tweets:  </h2>
+			<p class="tweet-count">?</p>
+		    </section>
+		    <section>
+			<h2> Recent News Articles:  </h2>
+			<p class="news-count">?</p>
+		    </section>
+		    <section>
+			<iframe src="" width="400" scrolling="no" seamless="seamless" height="280"></iframe>
+		    </section>
+		</div>
+	</div>
+    </body>
+</html>
